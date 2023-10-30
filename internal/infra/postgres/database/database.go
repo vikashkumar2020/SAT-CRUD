@@ -41,4 +41,13 @@ func (database *Database) GetDB() *gorm.DB {
 	return database.DB
 }
 
+// CloseDBConnection closes the database connection
+func (database *Database) CloseDBConnection() {
+	db, err := database.DB.DB()
+	if err != nil {
+		utils.LogFatal(err)
+	}
+	db.Close()
+}
+
 

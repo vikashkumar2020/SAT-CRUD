@@ -26,6 +26,7 @@ func main(){
 	// initialize database
 	database := pgdatabase.GetDBInstance();
 	database.NewDBConnection(dbConfig);
+	defer database.CloseDBConnection()
 	utils.LogInfo("db connection established")
 
 	router := gin.Default()

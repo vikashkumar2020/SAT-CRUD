@@ -4,7 +4,7 @@ import (
     "gorm.io/gorm"
 )
 
-type URL struct {
+type Result struct {
     gorm.Model 
 
     Name     string `json:"name" gorm:"primaryKey;unique"`
