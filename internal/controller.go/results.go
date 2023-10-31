@@ -3,7 +3,7 @@ package controller
 import (
 "github.com/gin-gonic/gin"
 database "sat-result/internal/infra/postgres/database"
-types "sat-result/internal/model/types"
+// types "sat-result/internal/model/types"
 model "sat-result/internal/model/entity"
 )
 
