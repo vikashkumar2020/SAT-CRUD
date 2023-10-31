@@ -16,7 +16,7 @@ type Result struct {
 }
 
 type CreateSatResultResponse struct {
-	ResponseRequest
+	*ResponseRequest
 	Name    string `json:"name"`
 }
 

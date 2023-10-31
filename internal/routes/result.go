@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"sat-result/internal/controller.go"
+	"sat-result/internal/controller"
 
 	"github.com/gin-gonic/gin"
 )
